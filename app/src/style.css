@@ -1,0 +1,75 @@
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #007bff; /* You can change the color of the spinner here */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: rotate 1s linear infinite; /* Apply the rotating animation */
+    margin: 0 auto;
+  }
+
+  body {
+    background-color: rgb(163, 163, 94);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+.App {
+  padding-top: 20px;
+}
+
+.sidebar-left,
+.sidebar-right {
+  padding: 10px;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.content-card {
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.content-card img {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-bottom: 15px; /* Add a margin at the bottom of the image */
+}
+
+.content-card .card-body {
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.button-left {
+  margin-right: auto;
+}
+
+.button-right {
+  margin-left: auto;
+}
+
